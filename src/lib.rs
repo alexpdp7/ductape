@@ -1,10 +1,8 @@
 use std::io;
 use std::io::BufRead;
 
-use duct;
-
+use tracing::info;
 use tracing::instrument;
-use tracing::{debug, info};
 use tracing_indicatif::IndicatifLayer;
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
