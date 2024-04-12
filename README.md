@@ -1,3 +1,5 @@
+Archived: rolled into <https://github.com/alexpdp7/rust_tracing_starter>.
+
 Wrapper over duct, indicatif, and tracing, to run and trace `std::process`.
 
 * Checks for return code 0 by default

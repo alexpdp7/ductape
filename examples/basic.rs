@@ -1,7 +1,6 @@
+use ductape;
 use rayon::prelude::*;
 use tracing_subscriber::filter::LevelFilter;
-
-use ductape;
 
 pub fn main() {
     ductape::setup(LevelFilter::INFO);
@@ -11,6 +10,5 @@ pub fn main() {
         .par_iter()
         .enumerate()
         .for_each(|(i, arg)| ductape::run(&i.to_string(), &["find", arg]));
-
-    std::thread::sleep(std::time::Duration::from_secs(1));
+    //    opentelemetry::global::shutdown_tracer_provider();
 }

@@ -254,6 +254,7 @@ version = "0.1.0"
 dependencies = [
  "duct",
  "indicatif",
+ "opentelemetry",
  "opentelemetry-otlp",
  "opentelemetry_sdk",
  "rayon",
